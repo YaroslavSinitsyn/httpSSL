@@ -1,0 +1,34 @@
+{
+  "name": "HttpSSL",
+  "version": "1.0.8",
+  "description": "This plugin allows your application to retrieve the local wifi address and subnetmask.",
+  "cordova": {
+    "id":  "PluginHttpSSL»,
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "subnet",
+    "ip",
+    "wifi",
+    "network"
+
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.1.0"
+    }
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "h"
+  },
+  "homepage": ""
+}

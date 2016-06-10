@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="PluginHttpSSL"
+    version="1.0.8">
+
+    <name>HttpSSL</name>
+    <description>
+    	This plugin allows your application to retrieve the local wifi address.
+	</description>
+
+    <license>MIT</license>
+
+    <keywords>local,ip,wifi,network</keywords>
+
+	<engines>
+		<engine name="cordova" version="&gt;=3.1.0" />
+	</engines>
+
+    <js-module src="www/httpSSL.js" name="httpSSL">
+    	<clobbers target="window.httpSSL" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="httpSSL">
+                <param name="ios-package" value="HttpSSL" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/HttpSSL.h" />
+        <source-file src="src/ios/HttpSSL.m" />
+    </platform>
+
+    
+
+</plugin>
